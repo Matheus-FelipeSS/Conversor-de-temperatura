@@ -11,15 +11,19 @@
     <div class="container">
         <div class="input_box">
             <h6>Celsius</h6>
-            <input type="number" id="celsius">
+            <input type="number" id="celsius" inputmode="numeric" pattern="[0-9]*">
         </div>
         <i class="ri-arrow-left-right-fill" id="icon"></i>
         <div class="input_box">
             <h6>Fahrenheit</h6>
-            <input type="number" id="fahrenheit">
+            <input type="number" id="fahrenheit" inputmode="numeric" pattern="[0-9]*">
         </div>
     </div>
     
+    <div class="calculation">
+        <h6>Fórmula de Conversão:</h6>
+        <p id="formula"></p>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
