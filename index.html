@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jsuites/dist/jsuites.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsuites/dist/jsuites.min.css" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Conversor</title>
@@ -11,12 +13,12 @@
     <div class="container">
         <div class="input_box">
             <h6>Celsius</h6>
-            <input type="number" id="celsius" inputmode="numeric" pattern="[0-9]*">
+            <input type="text" data-mask='0.00' id="celsius">
         </div>
         <i class="ri-arrow-left-right-fill" id="icon"></i>
         <div class="input_box">
             <h6>Fahrenheit</h6>
-            <input type="number" id="fahrenheit" inputmode="numeric" pattern="[0-9]*">
+            <input type="text" data-mask='0.00' id="fahrenheit">
         </div>
     </div>
     
